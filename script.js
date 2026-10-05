@@ -30,6 +30,50 @@ document.addEventListener("click", function (e) {
     }
 });
 
+// Carrusel hero
+let pista = document.querySelector(".carrusel-pista");
+let imagenes = document.querySelectorAll(".carrusel-pista img");
+let btnAnterior = document.querySelector(".carrusel-anterior");
+let btnSiguiente = document.querySelector(".carrusel-siguiente");
+let contenedorPuntos = document.querySelector(".carrusel-puntos");
+let indiceActual = 0;
+
+// Crear puntos
+for (let i = 0; i < imagenes.length; i++) {
+    let punto = document.createElement("button");
+    punto.classList.add("carrusel-punto");
+    if (i === 0) punto.classList.add("activo");
+    punto.addEventListener("click", function () {
+        irA(i);
+    });
+    contenedorPuntos.appendChild(punto);
+}
+
+let puntos = document.querySelectorAll(".carrusel-punto");
+
+function irA(indice) {
+    indiceActual = indice;
+    pista.style.transform = "translateX(-" + (indiceActual * 100) + "%)";
+    puntos.forEach(function (p) { p.classList.remove("activo"); });
+    puntos[indiceActual].classList.add("activo");
+}
+
+btnSiguiente.addEventListener("click", function () {
+    let siguiente = (indiceActual + 1) % imagenes.length;
+    irA(siguiente);
+});
+
+btnAnterior.addEventListener("click", function () {
+    let anterior = (indiceActual - 1 + imagenes.length) % imagenes.length;
+    irA(anterior);
+});
+
+// Auto avance cada 4 segundos
+setInterval(function () {
+    let siguiente = (indiceActual + 1) % imagenes.length;
+    irA(siguiente);
+}, 4000);
+
 // Inicializar AOS (Animate On Scroll)
 if (typeof AOS !== "undefined") {
     AOS.init({
