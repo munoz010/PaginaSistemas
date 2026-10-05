@@ -33,8 +33,6 @@ document.addEventListener("click", function (e) {
 // Carrusel hero
 let pista = document.querySelector(".carrusel-pista");
 let imagenes = document.querySelectorAll(".carrusel-pista img");
-let btnAnterior = document.querySelector(".carrusel-anterior");
-let btnSiguiente = document.querySelector(".carrusel-siguiente");
 let contenedorPuntos = document.querySelector(".carrusel-puntos");
 let indiceActual = 0;
 
@@ -57,16 +55,6 @@ function irA(indice) {
     puntos.forEach(function (p) { p.classList.remove("activo"); });
     puntos[indiceActual].classList.add("activo");
 }
-
-btnSiguiente.addEventListener("click", function () {
-    let siguiente = (indiceActual + 1) % imagenes.length;
-    irA(siguiente);
-});
-
-btnAnterior.addEventListener("click", function () {
-    let anterior = (indiceActual - 1 + imagenes.length) % imagenes.length;
-    irA(anterior);
-});
 
 // Auto avance cada 4 segundos
 setInterval(function () {
