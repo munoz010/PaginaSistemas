@@ -931,6 +931,14 @@ img {
     }
 
     .banner-hero {
-        height: 140px;
+        height: 100px;
+    }
+
+    .carrusel-pista img {
+        height: 200px;
+    }
+
+    .carrusel {
+        max-width: 300px;
     }
 }
