@@ -202,11 +202,28 @@ img {
 }
 
 .hero-dos-columnas {
-    max-width: 750px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
 }
 
 .hero-contenido {
     text-align: left;
+}
+
+.hero-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-imagen img {
+    max-width: 360px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
 }
 
 .etiqueta {
@@ -728,6 +745,10 @@ img {
     .hero-dos-columnas {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .hero-imagen img {
+        max-width: 260px;
     }
 
     .pie-grid {
