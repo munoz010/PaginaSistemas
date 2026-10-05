@@ -5,45 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingeniería de Sistemas - Universidad de la Amazonia</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <header class="encabezado">
         <div class="contenedor barra">
             <a class="logo" href="#inicio">
-                <span class="marca">&lt;/&gt;</span>
-                <span class="nombre-programa">
-                    <strong>Ingeniería de Sistemas</strong>
-                    <small>Universidad de la Amazonia</small>
-                </span>
+                <img class="logo-img" src="img/logo-uniamazonia.png" alt="Universidad de la Amazonia">
             </a>
             <button class="boton-menu" id="botonMenu">
                 <span></span><span></span><span></span>
             </button>
             <nav class="navegacion" id="navegacion">
+                <a href="#inicio">Inicio</a>
                 <a href="#programa">Programa</a>
-                <a href="#ficha">Ficha</a>
                 <a href="#identidad">Misión y visión</a>
-                <a href="#perfil">Perfil</a>
                 <a href="#plan">Plan de estudios</a>
-                <a href="#admision">Admisión</a>
-                <a href="#documentos">Documentos</a>
-                <a href="#contacto" class="boton-contacto">Contacto</a>
+                <a href="#contacto">Contacto</a>
+                <a href="https://chaira.uniamazonia.edu.co/Chaira/View/Private/Desktop.aspx" target="_blank" class="boton-contacto">Campus Chairá</a>
+                <div class="menu-desplegable" id="menuDesplegable">
+                    <a href="#ficha">Ficha técnica</a>
+                    <a href="#perfil">Perfil de egreso</a>
+                    <a href="#vida">Vida académica</a>
+                    <a href="#admision">Admisión</a>
+                    <a href="#documentos">Documentos</a>
+                    <a href="https://correo.uniamazonia.edu.co/" target="_blank">Correo Institucional</a>
+                    <a href="https://aulaextendida.uniamazonia.edu.co/" target="_blank">Aula Extendida</a>
+                    <a href="https://sigepi.uniamazonia.edu.co/" target="_blank">SIGEPI</a>
+                    <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico/118-inscripciones.html" target="_blank">PQRS-D</a>
+                </div>
             </nav>
+            <button class="boton-mas" id="botonMas">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
 
     <main>
         <!-- HERO -->
         <section class="hero" id="inicio">
-            <div class="contenedor hero-contenido">
-                <p class="etiqueta">Facultad de Ingeniería · Florencia, Caquetá</p>
-                <h1>Ingeniería de <span class="resaltado">Sistemas</span> para la Amazonia y el país</h1>
-                <p class="descripcion">Formamos profesionales íntegros que crean, innovan y aplican soluciones computacionales para fortalecer el progreso económico, social y tecnológico de la región amazónica.</p>
-                <div class="botones-hero">
-                    <a class="boton boton-principal" href="#admision">Quiero ingresar</a>
-                    <a class="boton boton-secundario" href="#programa">Conocer el programa</a>
+            <div class="contenedor hero-dos-columnas">
+                <div class="hero-contenido animate__animated animate__fadeInLeft">
+                    <p class="etiqueta">FACULTAD DE INGENIERÍA · PREGRADO PRESENCIAL</p>
+                    <h1>Ingeniería de <span class="resaltado">Sistemas.</span></h1>
+                    <p class="hero-subtitulo">Tu futuro tecnológico empieza en el corazón de la Amazonia.</p>
+                    <p class="descripcion">Formamos profesionales íntegros capaces de liderar la transformación digital, la inteligencia artificial, el modelado geoespacial y el desarrollo de software sustentable para la región amazónica y el mundo.</p>
+                    <div class="botones-hero">
+                        <a class="boton boton-principal" href="#admision">Inscribirme al programa →</a>
+                        <a class="boton boton-secundario" href="https://www.uniamazonia.edu.co/documentos/docs/Programas%20Academicos/Ingenieria%20de%20Sistemas/BROCHURE%20INGENIERIA%20DE%20SISTEMAS.pdf" target="_blank">Descargar Pensum 2020 (PDF)</a>
+                    </div>
                 </div>
             </div>
+            <div class="contenedor">
+                <div class="datos-rapidos">
+                    <div class="dato-rapido">
+                        <strong>SNIES: 52384</strong>
+                    </div>
+                    <div class="dato-rapido">
+                        <strong>Res. MEN 001562 (2022)</strong>
+                    </div>
+                    <div class="dato-rapido">
+                        <strong>Campus Florencia · Caquetá</strong>
+                    </div>
+                </div>
+            </div>
+            <img class="banner-hero" src="img/banner-programa.png" alt="Campus Universidad de la Amazonia">
+        </section>
+
+        <!-- DATOS CLAVE -->
+        <section class="seccion-datos">
             <div class="contenedor">
                 <div class="datos-clave">
                     <div class="dato">
@@ -69,11 +100,11 @@
         <!-- PROGRAMA -->
         <section id="programa" class="seccion">
             <div class="contenedor dos-columnas">
-                <div>
+                <div data-aos="fade-right">
                     <p class="etiqueta etiqueta-oscura">El programa</p>
                     <h2>Propósito de formación</h2>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <p>El Programa Ingeniería de Sistemas de la Universidad de la Amazonia tiene como principal propósito desarrollar procesos de formación integral de profesionales de la Ingeniería de Sistemas, mediante un currículo que aborda los conocimientos propios de las ciencias básicas, la ingeniería, el campo tecnológico, investigativo, socio-humanista y de formación complementaria.</p>
                     <p>Esto le permite al egresado interactuar con su entorno e incidir positivamente en él, mediante la creación, innovación y aplicación de soluciones computacionales soportadas en las Tecnologías de la Información y la Comunicación, que contribuyan al fortalecimiento y progreso económico, social, tecnológico y sustentable de la región Amazónica y el país.</p>
                     <div class="etiquetas">
@@ -91,44 +122,54 @@
         <!-- FICHA TECNICA -->
         <section id="ficha" class="seccion seccion-gris">
             <div class="contenedor">
-                <p class="etiqueta etiqueta-oscura">Ficha técnica</p>
-                <h2>Información oficial del programa</h2>
-                <div class="ficha-grid">
+                <p class="etiqueta etiqueta-oscura" data-aos="fade-down">DATOS OFICIALES DEL PROGRAMA</p>
+                <h2 data-aos="fade-down">Ficha Técnica del Programa</h2>
+                <p class="texto-intro" data-aos="fade-up">Información regulatoria, académica y administrativa conforme a los registros formales ante el Ministerio de Educación Nacional de la República de Colombia.</p>
+                <div class="ficha-grid" data-aos="fade-up">
                     <div class="ficha-item">
-                        <span class="ficha-label">Título que otorga</span>
+                        <span class="ficha-label">1. Título que otorga</span>
                         <span class="ficha-valor">Ingeniero de Sistemas</span>
+                        <span class="ficha-desc">Título universitario profesional de pregrado con fundamentación en ingeniería de software y analítica regional.</span>
                     </div>
                     <div class="ficha-item">
-                        <span class="ficha-label">Modalidad</span>
+                        <span class="ficha-label">2. Modalidad</span>
                         <span class="ficha-valor">Presencial</span>
+                        <span class="ficha-desc">Interacción directa en aulas interactivas, laboratorios de cómputo y centros de investigación física.</span>
                     </div>
                     <div class="ficha-item">
-                        <span class="ficha-label">Jornada</span>
+                        <span class="ficha-label">3. Jornada</span>
                         <span class="ficha-valor">Diurna</span>
+                        <span class="ficha-desc">Desarrollo curricular estructurado en franjas académicas matutinas y vespertinas.</span>
                     </div>
                     <div class="ficha-item">
-                        <span class="ficha-label">Duración</span>
-                        <span class="ficha-valor">10 semestres</span>
+                        <span class="ficha-label">4. Duración estimada</span>
+                        <span class="ficha-valor">10 Semestres Académicos</span>
+                        <span class="ficha-desc">5 años académicos con articulación progresiva a pasantías, opciones de grado y semilleros de investigación.</span>
                     </div>
                     <div class="ficha-item">
-                        <span class="ficha-label">Créditos académicos</span>
-                        <span class="ficha-valor">178</span>
+                        <span class="ficha-label">5. Créditos académicos</span>
+                        <span class="ficha-valor">178 Créditos</span>
+                        <span class="ficha-desc">Distribuido en áreas de ciencias básicas, ciencias de la ingeniería, ingeniería aplicada y sociohumanística.</span>
                     </div>
                     <div class="ficha-item">
-                        <span class="ficha-label">Código SNIES</span>
-                        <span class="ficha-valor">52384</span>
-                    </div>
-                    <div class="ficha-item">
-                        <span class="ficha-label">Lugar de desarrollo</span>
-                        <span class="ficha-valor">Florencia, Caquetá · Campus Florencia</span>
-                    </div>
-                    <div class="ficha-item">
-                        <span class="ficha-label">Acuerdo de creación</span>
+                        <span class="ficha-label">6. Acuerdo de creación</span>
                         <span class="ficha-valor"><a href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Superior/Acuerdos/2004/Acuerdo%20016%20-%20Por%20el%20cual%20se%20autoriza%20la%20creacion%20del%20programa%20academico%20de%20Ingenieria%20de%20Sistemas.pdf" target="_blank">Acuerdo 16 del 26 de agosto de 2004</a></span>
+                        <span class="ficha-desc">Estatuto normativo emitido por el Consejo Superior Universitario de la Universidad de la Amazonia.</span>
                     </div>
                     <div class="ficha-item">
-                        <span class="ficha-label">Registro calificado</span>
+                        <span class="ficha-label">7. Código SNIES</span>
+                        <span class="ficha-valor">52384</span>
+                        <span class="ficha-desc">Registro ante el Sistema Nacional de Información de la Educación Superior de Colombia.</span>
+                    </div>
+                    <div class="ficha-item">
+                        <span class="ficha-label">8. Registro calificado</span>
                         <span class="ficha-valor"><a href="https://www.uniamazonia.edu.co/documentos/docs/Programas%20Academicos/Ingenieria%20de%20Sistemas/Resolucion%201562%20-%20Registro%20Calificado.pdf" target="_blank">Resolución 001562 del 16 de febrero de 2022</a></span>
+                        <span class="ficha-desc">Resolución vigente del Ministerio de Educación Nacional que certifica las condiciones de calidad del programa.</span>
+                    </div>
+                    <div class="ficha-item">
+                        <span class="ficha-label">9. Lugar de desarrollo</span>
+                        <span class="ficha-valor">Florencia, Caquetá · Campus Florencia</span>
+                        <span class="ficha-desc">Sede principal de la Universidad de la Amazonia, barrio El Porvenir.</span>
                     </div>
                 </div>
             </div>
@@ -137,14 +178,14 @@
         <!-- MISION Y VISION -->
         <section id="identidad" class="seccion">
             <div class="contenedor">
-                <p class="etiqueta etiqueta-oscura">Identidad</p>
-                <h2>Misión y visión</h2>
-                <div class="tarjetas-dos">
-                    <div class="tarjeta tarjeta-oscura">
+                <p class="etiqueta etiqueta-oscura" data-aos="fade-down">Identidad</p>
+                <h2 data-aos="fade-down">Misión y visión</h2>
+                <div class="mv-grid" data-aos="fade-up">
+                    <div class="tarjeta">
                         <h3>Misión</h3>
                         <p>El programa académico Ingeniería de Sistemas de la Universidad de la Amazonia asume como encargo social la formación de profesionales íntegros, con capacidad para crear, innovar, formular y solucionar problemáticas organizacionales y productivas, apoyados en el desarrollo de sistemas de información soportados en las diferentes tecnologías informáticas, con el propósito de contribuir al desarrollo social, económico y tecnológico de la región amazónica y del país.</p>
                     </div>
-                    <div class="tarjeta tarjeta-verde">
+                    <div class="tarjeta">
                         <h3>Visión</h3>
                         <p>Ingeniería de Sistemas será un programa académico en permanente acreditación académica y social, líder en la formación integral de profesionales, competentes en el campo académico, investigativo y humanístico; comprometidos con el desarrollo tecnológico de la región amazónica y del país apoyados en tecnologías de información.</p>
                     </div>
@@ -155,11 +196,11 @@
         <!-- PERFIL DE EGRESO -->
         <section id="perfil" class="seccion seccion-gris">
             <div class="contenedor dos-columnas">
-                <div>
+                <div data-aos="fade-right">
                     <p class="etiqueta etiqueta-oscura">Egresados</p>
                     <h2>Perfil de egreso</h2>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <p>El Ingeniero de Sistemas de la Universidad de la Amazonia es un profesional que comprende las dinámicas del entorno, reconociendo las implicaciones y las responsabilidades legales, profesionales, éticas, sociales, económicas y culturales del ejercicio de su profesión.</p>
                     <p>Así mismo, reconoce que la evolución constante de su disciplina y las condiciones cambiantes del entorno hacen necesario implementar estrategias autónomas de aprendizaje continuo, orientadas a su perfeccionamiento profesional.</p>
                     <ul class="lista-check">
@@ -174,22 +215,19 @@
         <!-- PLAN DE ESTUDIOS -->
         <section id="plan" class="seccion">
             <div class="contenedor">
-                <p class="etiqueta etiqueta-oscura">Currículo</p>
-                <h2>Plan de estudios</h2>
-                <p class="texto-intro">El plan de estudios vigente fue aprobado mediante el Acuerdo 44 del 2 de diciembre de 2020 del Consejo Académico, que también define el plan de transición del programa.</p>
-                <div class="tarjetas-tres">
+                <p class="etiqueta etiqueta-oscura" data-aos="fade-down">Currículo</p>
+                <h2 data-aos="fade-down">Plan de estudios</h2>
+                <p class="texto-intro" data-aos="fade-up">El plan de estudios vigente fue aprobado mediante el Acuerdo 44 del 2 de diciembre de 2020 del Consejo Académico, que también define el plan de transición del programa.</p>
+                <div class="tarjetas-tres" data-aos="fade-up" data-aos-delay="200">
                     <a class="enlace-tarjeta" href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Academico/Acuerdos/2020/Acuerdo%2044%20Plan%20de%20Estudios%20de%20Ingenieria%20de%20Sistemas.pdf" target="_blank">
-                        <span class="icono">📘</span>
                         <strong>Acuerdo 44 de 2020</strong>
                         <span>Plan de estudios y plan de transición</span>
                     </a>
                     <a class="enlace-tarjeta" href="https://drive.google.com/drive/folders/1OjF8Tb43WolUrTwbHwLWE9UDTKP45xVQ?usp=drive_link" target="_blank">
-                        <span class="icono">🗂️</span>
                         <strong>Contenidos programáticos</strong>
                         <span>Pensum 2020</span>
                     </a>
                     <a class="enlace-tarjeta" href="https://www.uniamazonia.edu.co/documentos/docs/Programas%20Academicos/Ingenieria%20de%20Sistemas/BROCHURE%20INGENIERIA%20DE%20SISTEMAS.pdf" target="_blank">
-                        <span class="icono">📄</span>
                         <strong>Brochure del programa</strong>
                         <span>Resumen para aspirantes</span>
                     </a>
@@ -197,25 +235,47 @@
             </div>
         </section>
 
-        <!-- ADMISION -->
-        <section id="admision" class="seccion seccion-gris">
+        <!-- VIDA ACADEMICA -->
+        <section id="vida" class="seccion seccion-gris">
             <div class="contenedor">
-                <p class="etiqueta etiqueta-oscura">Ingreso</p>
-                <h2>Admisión e inversión</h2>
-                <div class="tarjetas-tres">
+                <p class="etiqueta etiqueta-oscura" data-aos="fade-down">Vida académica</p>
+                <h2 data-aos="fade-down">Radio y semilleros de investigación</h2>
+                <p class="texto-intro" data-aos="fade-up">El programa cuenta con espacios que fortalecen la formación integral de los estudiantes, promoviendo la investigación y la comunicación.</p>
+                <div class="tarjetas-dos">
+                    <div class="tarjeta" data-aos="zoom-in" data-aos-delay="100">
+                        <h3>Radio</h3>
+                        <p>Espacio radial gestionado por estudiantes y docentes del programa, dedicado a la divulgación de temas tecnológicos, académicos y culturales de la comunidad universitaria.</p>
+                        <p>La radio fortalece las competencias comunicativas de los estudiantes y acerca la ingeniería a la región amazónica a través de contenidos informativos y educativos.</p>
+                    </div>
+                    <div class="tarjeta" data-aos="zoom-in" data-aos-delay="300">
+                        <h3>Semilleros de investigación</h3>
+                        <p>El programa impulsa la formación investigativa desde los primeros semestres mediante semilleros que abordan líneas como sistemas de información geográfica, desarrollo de software, inteligencia artificial y tecnologías aplicadas a la región.</p>
+                        <p>Los semilleros permiten a los estudiantes participar en proyectos reales, publicar resultados y representar a la universidad en eventos académicos nacionales e internacionales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADMISION -->
+        <section id="admision" class="seccion">
+            <div class="contenedor">
+                <p class="etiqueta etiqueta-oscura" data-aos="fade-down">Ingreso</p>
+                <h2 data-aos="fade-down">Requisitos de Admisión</h2>
+                <p class="texto-intro" data-aos="fade-up">El proceso de selección y admisión está regulado por la Dirección de Admisión, Registro y Control Académico de la Universidad de la Amazonia.</p>
+                <div class="tarjetas-tres" data-aos="fade-up">
                     <div class="tarjeta">
                         <h3>Requisitos</h3>
-                        <p>Consulta los requisitos para aspirantes en el Departamento de Admisión, Registro y Control Académico.</p>
-                        <a class="enlace-mas" href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico/228-aspirantes.html" target="_blank">Ver requisitos →</a>
+                        <p>Título de Bachiller, Pruebas de Estado ICFES / Saber 11 con ponderación reglamentaria para áreas de matemáticas y ciencias, y pago de derechos de inscripción.</p>
+                        <a class="enlace-mas" href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico/228-aspirantes.html" target="_blank">Consultar portal de admisiones oficial →</a>
                     </div>
                     <div class="tarjeta">
                         <h3>Inscripción</h3>
-                        <p>El valor de la inscripción es el <strong>8,0 % del S.M.M.L.V.</strong> según el Acuerdo 02 del 26 de enero de 2012.</p>
+                        <p>El valor de la inscripción es el <strong>8,0 % del S.M.M.L.V.</strong> según el Acuerdo 02 del 26 de enero de 2012. Diligenciamiento del formulario digital en la plataforma Chairá.</p>
                         <a class="enlace-mas" href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico/118-inscripciones.html" target="_blank">Ir a inscripciones →</a>
                     </div>
                     <div class="tarjeta">
                         <h3>Matrícula</h3>
-                        <p>El valor del derecho de matrícula para pregrado presencial está definido en el Acuerdo 01 del 26 de enero de 2012.</p>
+                        <p>El valor del derecho de matrícula para pregrado presencial está definido en el Acuerdo 01 del 26 de enero de 2012 del Consejo Superior.</p>
                         <a class="enlace-mas" href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Superior/Acuerdos/2012/Acuerdo%20001%20-%20Por%20el%20cual%20se%20establece%20la%20tabla%20de%20matricula%20para%20estudiantes%20de%20pregrado%20presencial.pdf" target="_blank">Ver tabla de matrícula →</a>
                     </div>
                 </div>
@@ -223,11 +283,11 @@
         </section>
 
         <!-- DOCUMENTOS -->
-        <section id="documentos" class="seccion">
+        <section id="documentos" class="seccion seccion-gris">
             <div class="contenedor">
-                <p class="etiqueta etiqueta-oscura">Recursos</p>
-                <h2>Documentos de interés</h2>
-                <div class="lista-documentos">
+                <p class="etiqueta etiqueta-oscura" data-aos="fade-down">Recursos</p>
+                <h2 data-aos="fade-down">Documentos de interés</h2>
+                <div class="lista-documentos" data-aos="fade-up">
                     <a class="documento" href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Academico/Acuerdos/2002/Acuerdo%2019%20-%20Por%20el%20cual%20se%20adopta%20la%20linea%20de%20investigacion%20Sistemas%20de%20Formacion%20Geografica%20para%20la%20facultad%20de%20ingenieria.pdf" target="_blank">
                         <strong>Acuerdo 019 de 2002</strong>
                         <small>Línea de investigación Sistemas de Información Geográfica</small>
@@ -260,15 +320,28 @@
             </div>
         </section>
 
+        <!-- CTA INSCRIPCIONES -->
+        <section class="seccion-cta">
+            <div class="contenedor">
+                <p class="etiqueta" data-aos="fade-down">INSCRIPCIONES ABIERTAS</p>
+                <h2 data-aos="fade-up">Comienza tu trayectoria en la Ingeniería de Sistemas</h2>
+                <p class="texto-claro" data-aos="fade-up">Únete a la comunidad de desarrolladores, investigadores y líderes que impulsan el desarrollo informático del sur colombiano.</p>
+                <div class="botones-cta" data-aos="fade-up">
+                    <a class="boton boton-principal" href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico/118-inscripciones.html" target="_blank">Iniciar Inscripción →</a>
+                    <a class="boton boton-telefono" href="tel:+573204541936">320 454 1936</a>
+                </div>
+            </div>
+        </section>
+
         <!-- CONTACTO -->
         <section id="contacto" class="seccion seccion-contacto">
             <div class="contenedor dos-columnas">
-                <div>
+                <div data-aos="fade-right">
                     <p class="etiqueta">Contacto</p>
-                    <h2>Hablemos del programa</h2>
+                    <h2>Coordinación y contacto directo</h2>
                     <p class="texto-claro">Resolvemos tus dudas sobre admisión, plan de estudios y opciones de grado.</p>
                 </div>
-                <div class="lista-contacto">
+                <div class="lista-contacto" data-aos="fade-left">
                     <div class="contacto-item">
                         <span>Coordinadora del programa</span>
                         <strong>Paula Andrea Chica Murcia</strong>
@@ -279,15 +352,15 @@
                     </div>
                     <div class="contacto-item">
                         <span>Ubicación</span>
-                        <strong>Campus Florencia, barrio El Porvenir, bloque administrativo, primer piso. Florencia, Caquetá</strong>
+                        <strong>Sede Porvenir: Calle 17 Diagonal 17 con Carrera 3F, Florencia, Caquetá, Colombia</strong>
                     </div>
                     <div class="contacto-item">
                         <span>Atención al público</span>
-                        <strong>Lunes a viernes · 7:30 a. m. a 11:30 a. m. y 1:30 p. m. a 5:30 p. m.</strong>
+                        <strong>Lunes a viernes · 7:30 a. m. a 11:30 a. m. y 2:00 p. m. a 6:00 p. m.</strong>
                     </div>
                     <div class="contacto-item">
-                        <span>Sitio institucional</span>
-                        <a href="https://www.uniamazonia.edu.co/" target="_blank">www.uniamazonia.edu.co</a>
+                        <span>Correo electrónico</span>
+                        <a href="mailto:contactenos@uniamazonia.edu.co">contactenos@uniamazonia.edu.co</a>
                     </div>
                 </div>
             </div>
@@ -295,21 +368,41 @@
     </main>
 
     <footer class="pie">
-        <div class="contenedor pie-contenido">
-            <div>
-                <strong>Universidad de la Amazonia</strong>
-                <p>Programa de Ingeniería de Sistemas · Florencia, Caquetá, Colombia</p>
+        <div class="contenedor pie-grid">
+            <div class="pie-col">
+                <strong class="pie-titulo">Uniamazonia</strong>
+                <p>Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional.</p>
+                <p><strong>NIT:</strong> 891190346-1</p>
+                <p><strong>Acreditación:</strong> Institucional de Alta Calidad</p>
+                <p><strong>Carácter:</strong> Universidad Pública</p>
             </div>
-            <div class="pie-enlaces">
-                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/programas/pregrado/ingenieria/ingenieria-de-sistemas.html" target="_blank">Página oficial del programa</a>
-                <a href="https://www.facebook.com/uniamazonia.edu.co" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/uniamazonia/" target="_blank">Instagram</a>
-                <a href="https://www.youtube.com/c/uamazonia" target="_blank">YouTube</a>
+            <div class="pie-col">
+                <strong class="pie-titulo">Enlaces de Interés</strong>
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/la-institucion/marco-juridico.html" target="_blank">Marco Jurídico Institucional</a>
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/la-institucion/rendicion-de-cuentas.html" target="_blank">Rendición de Cuentas</a>
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/la-institucion/transparencia-y-acceso-a-la-informacion.html" target="_blank">Transparencia y Acceso a la Info</a>
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/la-institucion/control-interno-disciplinario.html" target="_blank">Control Interno Disciplinario</a>
             </div>
-            <p class="legal">Vigilada Ministerio de Educación. Información tomada del sitio oficial de la Universidad de la Amazonia.</p>
+            <div class="pie-col">
+                <strong class="pie-titulo">Servicios y Sistemas</strong>
+                <a href="https://chaira.uniamazonia.edu.co/Chaira/View/Private/Desktop.aspx" target="_blank">Plataforma Chairá</a>
+                <a href="https://correo.uniamazonia.edu.co/" target="_blank">Correo Institucional</a>
+                <a href="https://aulaextendida.uniamazonia.edu.co/" target="_blank">Aula Extendida Moodle</a>
+                <a href="https://sigepi.uniamazonia.edu.co/" target="_blank">Portal de Investigaciones SIGEPI</a>
+            </div>
+            <div class="pie-col">
+                <strong class="pie-titulo">Contacto y Ubicación</strong>
+                <p>Sede Porvenir: Calle 17 Diagonal 17 con Carrera 3F, Florencia, Caquetá, Colombia</p>
+                <p>Atención: Lunes a Viernes 7:30 a.m. - 11:30 a.m. y 2:00 p.m. - 6:00 p.m.</p>
+                <a href="mailto:contactenos@uniamazonia.edu.co">contactenos@uniamazonia.edu.co</a>
+            </div>
+        </div>
+        <div class="contenedor">
+            <p class="legal">Copyright 2026 Universidad de la Amazonia · Vigilada MinEducación · Todos los derechos reservados.</p>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
